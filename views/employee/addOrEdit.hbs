@@ -1,0 +1,34 @@
+<h3>{{viewTitle}} </h3>
+
+<form autocomplete="off" action="/employee" method="POST" class="form-group">
+    <div class="form-group">
+    <label for="fullName">fullName</label>
+    <input type="text" class="form-control"  name="fullName" placeholder="FULLNAME" value="{{employee.fullName}}">
+    <div class="text-danger">
+        {{employee.fullNameError}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="Email">Email</label>
+    <input type="text" class="form-control"  name="Email" placeholder="Email" value="{{employee.Email}}">
+    </div>
+
+<div class="form-row">
+
+    <div class="form-group col-md-6">
+    <label for="Mobile">Mobile</label>
+    <input type="text" class="form-control"  name="Mobile" placeholder="Mobile" value="{{employee.Mobile}}">
+    </div>
+
+    <div class="form-group col-md-6">
+    <label for="City">City</label>
+    <input type="text" class="form-control"  name="City" placeholder="City" value="{{employee.City}}">
+    </div>
+
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+</form>
