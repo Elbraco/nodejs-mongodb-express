@@ -8,9 +8,13 @@ const bodyParser = require('body-parser')
 const employeeController = require('./controllers/employeeController')
 
 const app = express();
+
+
+//MIDDLEWARE
+//Moteur Template 
+app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 
 app.set('views', path.join(__dirname, '/views/'));
@@ -24,7 +28,6 @@ app.engine('hbs', exphbs({
     layoutsDir: __dirname + '/views/layouts/',
     
 }));
-app.set('view engine', 'hbs');
 
 
 

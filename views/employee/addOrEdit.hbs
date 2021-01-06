@@ -1,6 +1,7 @@
 <h3>{{viewTitle}} </h3>
 
 <form autocomplete="off" action="/employee" method="POST" class="form-group">
+<input type="text" name="_id" value="{{employee._id}}">
     <div class="form-group">
     <label for="fullName">fullName</label>
     <input type="text" class="form-control"  name="fullName" placeholder="FULLNAME" value="{{employee.fullName}}">
@@ -32,3 +33,4 @@
         <button type="submit">Submit</button>
     </div>
 </form>
+<a href="/employee/list">Liste</a>

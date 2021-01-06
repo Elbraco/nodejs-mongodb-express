@@ -6,6 +6,7 @@
         <th>Email</th>
         <th>Mobile</th>
         <th>City</th>
+        <th></th>
 
         </tr>
 
@@ -18,7 +19,12 @@
             <td> {{this.Email}} </td>
             <td> {{this.Mobile}} </td>
             <td> {{this.City}} </td>
+            <td>
+                <a href="/employee/{{this._id}}">Modifier</a>
+                <a href="/employee/delete/{{this._id}}">Supprimer</a>
+            </td>
         </tr>
         {{/each}}
     </tbody>
 </table>
+<a href="/employee">Create New</a>
